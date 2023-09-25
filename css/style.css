@@ -1,3 +1,4 @@
+/* restart  */
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +7,15 @@
 img{
     width: 100%;
 }
+/* font  */
 body{
     background-color: greenyellow;
     font-family: 'Kanit', sans-serif;
-font-family: 'Mulish', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'PT Sans', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
+/* parte superiore  */
 header{
     background-color: hsl(0deg 0% 100%);
     min-height: 100px;
@@ -28,36 +31,44 @@ header{
     text-align: center;
     
 }
+/* elementi superiori a sinistra */
 .left{
     padding: 30px 0 0 20px;
     gap: 2rem;
 }
+/* stile link  */
 ul{
     list-style: none;
     
 }
+/* lista */
 .list{
     display: flex;
     gap: 2rem;
 }
+/* decorazione link  */
 a{
     text-decoration: none;  
 }
+/* elementi superiore a destra */
 .right{
     padding: 30px 20px 0 0;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+/* contenitore prima sezione */
 .content{
     min-height: 300px;
     width: 80%;
     margin: auto;
     background-color: orange;
 }
+/* titolo  */
 h1{
     text-align: center;
     padding: 5rem;  
 }
+/* box destro e sinistro */
 .aside-left, .aside-right{
     margin: auto;
     min-height: 300px;
@@ -70,6 +81,7 @@ h1{
 .aside-right{
     width: 55%
 }
+/* contenirore stretto */
 .container{
     width: 70%;
     min-height: 400px;
@@ -77,35 +89,40 @@ h1{
     margin: auto;
     margin-bottom: 3rem;
 }
+/* titolo secondario  */
 h2{
     margin-bottom: 3rem;
 }
+
 .button{
     display: inline-block;
     margin-right: 3rem;
-}
-.radio{
     padding-top: 3rem ;
 }
+
 .cards{
     margin-bottom: 6rem;
 }
+/* cards a 3 colonne  */
 .row{
     display: flex;
     justify-content: space-between;
     margin-top: 2.5rem;
 }
+/* card grande */
 .big-card{
     min-height: 500px;
     width: calc(90% / 3);
     background-color: red;
     margin-bottom: 3rem;
 }
+/* card lunghezza intera  */
 .biggest-card{
     min-height: 100px;
     background-color: blueviolet;
     margin-bottom: 4rem;
 }
+/* contenitore griglia  3 colonne */
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -117,10 +134,13 @@ h2{
     background-color: pink;
     border: 1px solid black;
 }
+/* link  */
 #link {
+    text-decoration: underline;
     display: inline-block;
-   margin: 3rem 0 5rem 0;
+    margin: 3rem 0 5rem 0;
 }
+/* contenitore lunghezza lunga */
 .wide-section{
     width: 100%;
     min-height: 400px;
@@ -129,16 +149,19 @@ h2{
     display: flex;
     width: 100%;
 }
+/* griglia con 3 colonne e sotto griglia */
 .col{
     width: calc(100% / 3);
     min-height: 400px;
     background-color: salmon;
     border: 1px solid black;
 }
+/* griglia sinistra e destra */
 .left-part, .right-part{
     display: flex;
     flex-wrap: wrap;
 }
+/* sottogriglia */
 .team{
     width: calc(100% / 2);
     height: 50%;
@@ -148,6 +171,7 @@ h2{
     display: flex;
     justify-content: space-between;
 }
+/* domande   */
 .question-box, .answer{
     padding: 2rem 4rem 2rem 0;
 }
@@ -159,6 +183,7 @@ footer{
     min-height: 600px;
     background-color: black;
 }
+/* footer parte superiore */
 .top-black{
     width: 80%;
     margin: auto;
@@ -168,6 +193,7 @@ footer{
     flex-wrap: wrap;
     background-color: bisque;
 }
+/* footer parte inferiore */
 .bot-black{
     color: lightgray;
     background-color: blue;
