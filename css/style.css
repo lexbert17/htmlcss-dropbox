@@ -61,6 +61,7 @@ h1{
     background-color: green;
     width: 40%;
     display: inline-block;
+    justify-content: space-around;
     
 }
 .aside-right{
@@ -73,9 +74,7 @@ h1{
     margin: auto;
 }
 h2{
-    padding-top:  6rem
-    
-    
+    margin-bottom: 3rem;
 }
 .radio{
     padding-top: 3rem;
@@ -136,4 +135,15 @@ h2{
     width: calc(100% / 2);
     height: 50%;
     border: 1px solid black;
+}
+.questions{
+    display: flex;
+    justify-content: space-between;
+}
+.question-box, .answer{
+    padding: 2rem 4rem 2rem 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
 }
