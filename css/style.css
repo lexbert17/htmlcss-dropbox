@@ -61,7 +61,7 @@ h1{
     background-color: green;
     width: 40%;
     display: inline-block;
-    margin-bottom: 3rem;
+    
 }
 .aside-right{
     width: 55%
@@ -73,7 +73,9 @@ h1{
     margin: auto;
 }
 h2{
-    padding-top:  6rem;
+    padding-top:  6rem
+    
+    
 }
 .radio{
     padding-top: 3rem;
@@ -96,4 +98,42 @@ h2{
     min-height: 100px;
     background-color: blueviolet;
     margin-bottom: 4rem;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+}
+.normal-card{
+    width: calc(100% / 3);
+    min-height: 200px;
+    background-color: pink;
+    border: 1px solid black;
+}
+#link {
+    display: inline-block;
+   margin: 3rem 0 5rem 0;
+}
+.wide-section{
+    width: 100%;
+    min-height: 400px;
+}
+.icons-row{
+    display: flex;
+    width: 100%;
+}
+.col{
+    width: calc(100% / 3);
+    min-height: 400px;
+    background-color: salmon;
+    border: 1px solid black;
+}
+.left-part, .right-part{
+    display: flex;
+    flex-wrap: wrap;
+}
+.team{
+    width: calc(100% / 2);
+    height: 50%;
+    border: 1px solid black;
 }
