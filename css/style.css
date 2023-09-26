@@ -9,10 +9,10 @@ img{
 }
 /* font  */
 body{
-    background-color: greenyellow;
+    /* background-color: greenyellow;
     font-family: 'Kanit', sans-serif;
     font-family: 'Mulish', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
 }
 /* parte superiore  */
 header{
@@ -47,7 +47,7 @@ ul{
     gap: 2rem;   
 }
 /* decorazione link superiore */
-a{
+.vertical-align{
     text-decoration: none; 
     color: inherit;
     vertical-align: middle; 
@@ -61,9 +61,13 @@ a{
 }
 /* sfondo bottone */
 .blue{
-    padding: 5px 10px;
+    text-align: center;
+    padding: 10px 15px;
     color: white;
     background-color: rgb(1 97 255);
+    height: 100%;
+    line-height: 100% ;
+
 }
 /* sfondo azzurro */
 .background-blue{
@@ -79,28 +83,40 @@ a{
 h1{
     text-align: left;
     font-size: 4rem;
-    padding: 3rem 0;  
+    padding-top: 3rem;  
+}
+.dropbox-description{
+    
 }
 .free-trial{
     padding: 10px 15px;
     display: inline-block;
     margin: 1.5rem 0;
+    text-decoration: none;
 }
 .arrow-down{
     display: inline-block;
-    margin: 3rem 0 2rem 0;
+    margin: 2rem 0 1rem 0;
     font-size: 1.5rem;
 }
 /* box destro e sinistro */
 .aside-left{
-    width: 35%;   
+    width: 35%; 
+    min-height: 400px;  
+    background-color: greenyellow;
 }
+.aside-right{
+    width: 65%;
+    min-height: 400px;
+    background-color: aqua;
+}
+
 #jumbo{
    z-index: 99; 
    position: absolute;
     z-index: 5;
     right: 0px;
-    bottom: -80px;
+    bottom: -70px;
     min-height: 400px;
     width: 65%
 }
@@ -115,7 +131,7 @@ h1{
 }
 /* titolo secondario  */
 h2{
-    padding: 4rem 0 0 0;
+    padding: 6rem 0 0 0;
 }
 
 .button{
@@ -131,19 +147,20 @@ h2{
 .row{
     display: flex;
     justify-content: space-between;
+}
+.cards .row{
     margin-top: 2.5rem;
 }
 /* card grande */
 .big-card{
-    min-height: 500px;
     width: calc(90% / 3);
-    background-color: pink;
     margin-bottom: 3rem;
+    border: 1px solid lightgray;
 }
 .users{
-    background-color: violet;
     padding: 5px 0;
     text-align: center;
+    border: 1px solid lightgray;
 }
 .plan{
     padding: 2rem;
@@ -153,16 +170,56 @@ h3{
 }
 .euro{
     display: block;
-    margin-bottom: 4rem;
+    
+}
+.rate{
+    display: inline-block;
+    margin-bottom: 2rem;
 }
 p{
-    margin: 2rem 0;
+    padding: 1rem 0;
 }
+.space-button{
+    
+    margin: 1rem 0;
+}
+.inherit{
+    text-decoration: none;
+    color: white;
+}
+.align{
+    align-items: center;
+    margin: 1rem 0 4rem 0;
+}
+.line-bot{
+    display: inline-block;
+    height: 4rem;
+    border-bottom: 2px solid lightgray;
+}
+.list-style{
+    padding-left: 20px;
+    text-indent: 2px;
+    list-style: none;
+    list-style-position: outside;
+    margin-top:2rem ;
+}
+.style{
+    margin-top: 1rem;
+}
+.style::before{
+    content: '✔';   
+    margin-left: -1em;
+    margin-right: .100em;
+    color: hsl(217.32deg 100% 50.2%);
+}
+
 /* card lunghezza intera  */
 .biggest-card{
-    min-height: 100px;
-    background-color: blueviolet;
     margin-bottom: 4rem;
+    border: 1px solid lightgray;
+}
+#p-enterprise{
+    margin-top: 2rem;
 }
 /* contenitore griglia  3 colonne */
 .content{
@@ -177,7 +234,7 @@ p{
     border: 1px solid black;
 }
 /* link  */
-#link {
+.link {
     text-decoration: underline;
     display: inline-block;
     margin: 3rem 0 5rem 0;
