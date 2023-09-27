@@ -290,11 +290,11 @@ p{
     top:50%;
     right: 50%;
     transform: translate(50%, -50%);
+}   
     
     
-    
-   
-}
+/* sfondi griglia sinistra   */
+
 .bg-green{
     background-color: hsl(112.5deg 38.89% 71.76%);
     border: 10px solid hsl(109.29deg 38.89% 85.88%);
@@ -309,7 +309,6 @@ p{
     background-color: hsl(359.74deg 100% 55.29%);
 }
 
-
 /* griglia con 3 colonne e sotto griglia */
 .col{
     width: calc(100% / 3);
@@ -317,7 +316,6 @@ p{
     background-color: salmon;
     border: 1px solid black;
     display: flex;
-    justify-content: center;
 }
 /* griglia sinistra e destra */
 .left-part, .right-part{
@@ -328,6 +326,24 @@ p{
 .team{
     width: calc(100% / 2);
     height: calc(100% / 2);
+}
+/* griglia parte centrale */
+.central-padding{
+    padding: 3rem;
+    min-height: 300px;
+    background-color: green;
+}
+.central-logo{
+    width: 50%;
+}
+.hr-short{
+    margin: 2rem 0;
+    width: 80px;
+}
+
+/* sfondi griglia destro  */
+.bg-dark-red{
+    background-color: hsl(350.99deg 100% 41.76%);
 }
 .questions{
     display: flex;
