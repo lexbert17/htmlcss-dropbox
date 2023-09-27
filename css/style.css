@@ -226,12 +226,9 @@ h3{
 }
 .content-left{
     width: 60%;
-
-    background-color: greenyellow ;
 }
 .content-right{
     width: 35%;
-    background-color: aqua;
     padding-right:3rem ;
 }
 .content-right h3{
@@ -383,7 +380,6 @@ footer{
     margin: auto;
     padding-bottom: 4rem;
     flex-wrap: wrap;
-    background-color: bisque;
 }
 .space{
     margin-bottom: 0.5rem;
@@ -391,7 +387,6 @@ footer{
 /* footer parte inferiore */
 .bot-black{
     color: lightgray;
-    background-color: blue;
     margin: 4rem 0 0 0 ; 
     width: 80%; 
     margin: auto;
