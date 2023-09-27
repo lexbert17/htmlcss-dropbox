@@ -47,7 +47,7 @@ ul{
     gap: 2rem; 
 }
 /* decorazione link superiore */
-.vertical-align{
+.no-decoration{
     text-decoration: none; 
     color: inherit;
     vertical-align: middle; 
@@ -66,8 +66,7 @@ ul{
     padding: 10px 15px;
     color: white;
     background-color: rgb(1 97 255);
-    height: 100%;
-    line-height: 100% ;
+   
 
 }
 /* sfondo azzurro */
@@ -128,10 +127,13 @@ h1{
 /* contenirore stretto */
 .container{
     width: 70%;
-    min-height: 400px;
+
     background-color: green;
     margin: auto;
-    margin-bottom: 3rem;
+}
+.flex{
+    display: flex;
+    padding-bottom: 6rem;
 }
 /* titolo secondario  */
 h2{
@@ -170,7 +172,10 @@ h2{
     padding: 2rem;
 }
 h3{
-    margin-bottom: 2rem;
+    
+}
+.h3-margin{
+    margin-bottom: 1rem;
 }
 .euro{
     display: block;
@@ -227,12 +232,12 @@ p{
 }
 .content-left{
     width: 60%;
-    min-height: 200px;
+
     background-color: greenyellow ;
 }
 .content-right{
     width: 35%;
-    min-height: 200px;
+
     background-color: aqua;
     padding: 4rem 3rem 0 0 ;
 }
@@ -271,7 +276,6 @@ p{
 /* contenitore lunghezza lunga */
 .wide-section{
     width: 100%;
-    min-height: 400px;
 }
 .icons-row{
     display: flex;
@@ -359,13 +363,36 @@ p{
     display: flex;
     justify-content: space-between;
 }
+.p-none{
+    display: none;
+}
+.chevron-none{
+    display: none;
+}
+.questions:hover .p-none{
+    display: block; 
+}
+.questions:hover .chevron-none{
+    display: block;
+}
+.questions:hover .chevron{
+    display: none;
+}
 /* domande   */
 .question-box, .answer{
-    padding: 2rem 4rem 2rem 0;
+    padding: 1rem;
+}
+.answer{
+    padding-right: 4rem;
 }
 .flex{
     display: flex;
-    justify-content: space-around;
+}
+.btn-white{
+  margin-top: 1.5rem;
+}
+.margin-question{
+    padding-bottom: 6rem;
 }
 footer{
     min-height: 600px;
@@ -375,11 +402,17 @@ footer{
 .top-black{
     width: 80%;
     margin: auto;
-    padding: 2rem 0;
+    padding-top: 4rem ;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: bisque;
+}
+.white-text{
+    color: white;
+}
+h3 ul l{
+    margin-bottom: 0.5rem;
 }
 /* footer parte inferiore */
 .bot-black{
