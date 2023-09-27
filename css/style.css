@@ -9,16 +9,89 @@ img{
 }
 /* font  */
 body{
-    /* background-color: greenyellow;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Mulish', sans-serif;
-    font-family: 'Open Sans', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
 }
 /* parte superiore  */
+
+/* elementi in comune */
+ul{
+    list-style: none;   
+}
+/* decorazione link  */
+.no-decoration{
+    text-decoration: none; 
+    color: inherit;
+    vertical-align: middle; 
+}
+/* sfondo azzurro */
+.background-blue{
+    background-color: rgb(180 208 231);
+}
+/* bottone blu  */
+.blue{
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background-color: rgb(1 97 255);
+}
+/* sfondo bottone */
+.blue:hover{
+    filter: brightness(1.5);
+}
+/* spaziatura superiore */
+.padding-top{
+    padding-top: 4rem;   
+}
+/* spaziatura paragrafo */
+p{
+    padding: 1rem 0;
+}
+/* spaziatura titolo secondario */
+/* titolo secondario  */
+h2{
+    padding: 6rem 0 2rem 0;
+}
+/* effetto hover  */
+.border-bot:hover{
+    border-bottom: 3px solid black;
+}
+/* contenirore stretto */
+.container{
+    width: 70%;
+    margin: auto;
+}
+/* griglia righe */
+.row{
+    display: flex;
+}
+/* griglia colonne */
+.between{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mrgn-bot{
+    margin-bottom: 2rem;
+}
+/* box destro e sinistro */
+.aside-left{
+    width: 35%; 
+}
+.aside-right{
+    width: 65%;
+}
+.padding-bottom{
+    padding-bottom: 6rem;
+}
 header{
     background-color: hsl(0deg 0% 100%);
     display: flex;
     justify-content: space-between;  
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
 }
 /* contenitore dell'header  */
 .header{
@@ -26,133 +99,55 @@ header{
     display: flex; 
     gap: 2rem; 
     line-height: 80px;
-    color: black;
+    color: black; 
+    padding: 0 2em;
 }
-/* elementi superiori a sinistra */
-.left{
-    padding-left: 2em;
-}
-/* logo  */
 .logo>img{
     display: inline-block;
     vertical-align: middle;
 }
-/* stile link  */
-ul{
-    list-style: none;   
-}
-/* lista superiore */
+/* spaziatura lista superiore */
 .list{
-    display: flex;
     gap: 2rem; 
 }
-/* decorazione link superiore */
-.no-decoration{
-    text-decoration: none; 
-    color: inherit;
-    vertical-align: middle; 
-}
-.border-bot:hover{
-    border-bottom: 3px solid black;
-}
-/* elementi superiore a destra */
-.right{
-    padding-right: 2em;  
-}
-/* sfondo bottone */
-.blue{
-    text-align: center;
-    display: inline-block;
+/* bottone inizia */
+.start{
     padding: 10px 15px;
     color: white;
     background-color: rgb(1 97 255);
-   
-
 }
-/* sfondo azzurro */
-.background-blue{
-    background-color: rgb(180 208 231);
+.start:hover{
+    filter: brightness(1.5);
 }
 /* contenitore prima sezione */
 .hero{
     width: 80%;
-    margin: auto;
-   
+    margin: auto; 
 }
 /* titolo  */
 h1{
-    text-align: left;
     font-size: 4rem;
-    padding-top: 3rem;  
+    padding-top: 6rem;  
 }
-.dropbox-description{
-    padding-top: 4rem;
-
-    
-}
-.free-trial{
-    padding: 10px 15px;
-    display: inline-block;
-    margin: 1.5rem 0;
-    text-decoration: none;
-}
+/* simbolo freccia */
 .arrow-down{
     display: inline-block;
     margin: 2rem 0 1rem 0;
     font-size: 1.5rem;
-}
-/* container aside  */
-.container-aside{
-    display: flex;
-
-}
-/* box destro e sinistro */
-.aside-left{
-    width: 35%; 
-    background-color: aquamarine; 
-}
-.aside-right{
-    width: 65%;
-    background-color: orange;
+    color: black;
 }
 
+/* immagine */
 #jumbo{ 
     position: relative;
     bottom: -80px;
     z-index: 5;
-    right: 0px;
-   
+    right: 0px;  
 }
-
-/* contenirore stretto */
-.container{
-    width: 70%;
-
-    background-color: green;
-    margin: auto;
-}
-.flex{
-    display: flex;
-    padding-bottom: 6rem;
-}
-/* titolo secondario  */
-h2{
-    padding: 6rem 0 2rem 0;
-}
-
 .button{
     display: inline-block;
     margin-right: 3rem;
     padding-top: 3rem ;
-}
-
-.cards{
-    margin-bottom: 6rem;
-}
-/* cards a 3 colonne  */
-.row{
-    display: flex;
-    justify-content: space-between;
 }
 .cards .row{
     margin-top: 2.5rem;
@@ -185,15 +180,17 @@ h3{
     display: inline-block;
     margin-bottom: 2rem;
 }
-p{
-    padding: 1rem 0;
+.folder{
+    display: inline-block;
 }
 .space-button{
     
     margin: 1rem 0;
 }
+.gap{
+    gap: .5em;
+}
 .inherit{
-    text-decoration: none;
     color: white;
 }
 .align{
@@ -207,9 +204,6 @@ p{
 }
 .list-style{
     padding-left: 20px;
-    text-indent: 2px;
-    list-style: none;
-    list-style-position: outside;
     margin-top:2rem ;
 }
 .style{
@@ -237,9 +231,8 @@ p{
 }
 .content-right{
     width: 35%;
-
     background-color: aqua;
-    padding: 4rem 3rem 0 0 ;
+    padding-right:3rem ;
 }
 .content-right h3{
     margin-bottom: 0;
@@ -258,7 +251,6 @@ p{
 }
 /* contenitore griglia  3 colonne */
 .content{
-    display: flex;
     flex-wrap: wrap;
     margin-bottom: 6rem;
 }
@@ -277,10 +269,7 @@ p{
 .wide-section{
     width: 100%;
 }
-.icons-row{
-    display: flex;
-    width: 100%;
-}
+
 .logo-team{
     height: 100%;  
     width: auto;  
@@ -316,14 +305,10 @@ p{
 /* griglia con 3 colonne e sotto griglia */
 .col{
     width: calc(100% / 3);
-    height: 500px;
-    background-color: salmon;
-    border: 1px solid black;
-    display: flex;
+    aspect-ratio: 1/1;
 }
 /* griglia sinistra e destra */
 .left-part, .right-part{
-    display: flex;
     flex-wrap: wrap;
 }
 /* sottogriglia */
@@ -385,14 +370,8 @@ p{
 .answer{
     padding-right: 4rem;
 }
-.flex{
-    display: flex;
-}
 .btn-white{
   margin-top: 1.5rem;
-}
-.margin-question{
-    padding-bottom: 6rem;
 }
 footer{
     min-height: 600px;
@@ -402,16 +381,11 @@ footer{
 .top-black{
     width: 80%;
     margin: auto;
-    padding-top: 4rem ;
-    display: flex;
-    justify-content: space-between;
+    padding-bottom: 4rem;
     flex-wrap: wrap;
     background-color: bisque;
 }
-.white-text{
-    color: white;
-}
-h3 ul l{
+.space{
     margin-bottom: 0.5rem;
 }
 /* footer parte inferiore */
@@ -422,12 +396,9 @@ h3 ul l{
     width: 80%; 
     margin: auto;
 }
-.italiano{
-    margin-top: 3rem;
-    display: inline-block;
-    background-color: goldenrod;
-    padding: 4rem 0;
-    border-top: 2px solid white;
-     
+.italiano{   
+    display: inline-block; 
+    padding-top: 2rem;  
+    color: lightgray;
 }
 

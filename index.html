@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;700&family=Mulish:wght@700&family=Open+Sans:wght@700&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -13,26 +13,26 @@
 <body>
     <header>
         <!-- header parte sinistra -->
-       <div class="header left">
+       <div class="header">
         <!-- logo  -->
         <div class="logo">
             <img src="img/logo-small.png" alt="logo">
         </div>
         <!-- link  -->
-        <ul class="list">
+        <ul class="list row">
            <li class="border-bot" ><a class="no-decoration" href="">Perchè Dropbox</a></li>
            <li class="border-bot" ><a class="no-decoration" href="">Funzioni</a></li>
            <li class="border-bot" ><a class="no-decoration" href="">Piani e Prezzi</a></li>
         </ul>
        </div>
        <!-- header parte destra -->
-       <nav class="header right">
+       <nav class="header">
         <!-- link  -->
-        <ul class="list">
+        <ul class="list row">
             <li class="border-bot"><a class="no-decoration" href="">Supporto</a></li>
             <li class="border-bot"><a class="no-decoration" href="">Contatta l'ufficio venditore</a></li>
             <li class="border-bot"><a class="no-decoration" href="">Accedi</a></li>
-            <li><a class="blue" href="">inizia</a></li>
+            <li><a class="start no-decoration" href="">inizia</a></li>
         </ul>
        </nav> 
     </header>
@@ -44,11 +44,11 @@
                 <!-- titolo  -->
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 <!-- aside sinistro -->
-                <div class="container-aside">  
+                <div class="row">  
                     <aside class="aside-left">
-                        <div class="dropbox-description">
+                        <div class="padding-top">
                             <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. <br> Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente è integrato per ottimizzare il flusso di lavoro eistente.</p>
-                            <a class="blue free-trial" href="">Inizia la tua prova gratuita</a>
+                            <a class="blue no-decoration" href="">Inizia la tua prova gratuita</a>
                             <p>Annulla in qualsiasi momento</p>
                             <a class="arrow-down" href="#down"><i class="fa-solid fa-arrow-down fa-2xl"></i></a>
 
@@ -65,25 +65,54 @@
         <div class="container">
             <!-- titolo secondario -->
             <h2>Trova il piano business che fa per te</h2>
-            <div class="radio">
+
                 <!-- bottoni -->
-                <div class="button"><input type="radio" name="none" >Fatturazione mensile</div>
-                <div class="button"><input type="radio" name="none" >Fatturazione annuale</div> 
-            </div>
-            <section class="cards">
-                <!-- cards a 3 colonne -->
-                <div id="down" class="row">
+                <div class="button">
+                    <input type="radio" name="none"  id="html" >
+                    <label for="html">Fatturazione mensile</label>
+                </div>
+                <div class="button">
+                    <input type="radio" name="none" id="css" >
+                    <label for="css">Fatturazione annuale</label>
+                </div>
+                 
+
+            <section class="padding-bottom">
+                <!-- cards a 3 colonne e 2 righe -->
+                <div class="row between">
                     <div class="big-card">
-                        <div class="users"><i class="fa-solid fa-user fa-xs" style="color: #000000;"></i> Singolo</div>
+                        <div class="users"><i class="fa-solid fa-users fa-xs"></i></div>
                         <div class="plan">
+                            <!-- titolo card  -->
                             <h3 class="h3-margin" >Professional</h3>
+                            <!-- euro  -->
                             <h4 class="euro">&euro; 12.00</h4>
+                            <!-- pagamento -->
                             <span class="rate">/mese</span>
-                            <p><i class="fa-solid fa-user fa-xs" style="color: #000000;"></i> 1 utente</p>
-                            <p><i class="fa-solid fa-folder fa-xs"></i> 5 TB di spazio di archiviazione sicuro</p>
-                            <p><i class="fa-solid fa-share-nodes fa-xs"></i> Funzioni di produttività premium e condivisione file semplice e sicura</p>
-                            <div class="blue " >
-                                <a class="inherit" href="">Prova gratis per 30 giorni</a>
+                            <!-- riga utente e paragrafo  --> 
+                            <div class="row gap mrgn-bot">
+                                <!-- user  -->
+                                <span><i class="fa-solid fa-user fa-xs" style="color: #000000;"></i></span>
+                                <!-- paragrafo  -->
+                                <div> 1 utente</div>
+                            </div>
+                            <!-- riga cartella e paragrafo -->
+                            <div class="row gap mrgn-bot">
+                                <!-- cartella  -->
+                                <span><i class="fa-solid fa-folder fa-xs"></i></span>
+                                <!-- paragrafo  -->
+                                <div> 5 TB di spazio di archiviazione sicuro</div>
+                            </div>
+                            <!-- riga condivisione e paragrafo  -->
+                            <div class="row gap mrgn-bot">
+                                <!-- condivisione  -->
+                                <span><i class="fa-solid fa-share-nodes fa-xs"></i></span>
+                                <!-- paragrafo  -->
+                                <div>Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                            </div>
+
+                            <div class="blue">
+                                <a class="inherit no-decoration" href="">Prova gratis per 30 giorni</a>
                             </div>
                             <div class="align">
                                 <span class="line-bot">oppure</span>
@@ -103,11 +132,26 @@
                             <h3 class="h3-margin" >Professional</h3>
                             <h4 class="euro">&euro; 18.00</h4>
                             <span class="rate" >/utente/mese</span>
-                            <p><i class="fa-solid fa-users fa-xs" style="color: #000000;"></i> 1 utente</p>
-                            <p><i class="fa-solid fa-folder fa-xs"></i> Tutto lo spazio di cui ha bisogno il tuo team</p>
-                            <p><i class="fa-solid fa-share-nodes fa-xs"></i> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</p>
+                            <div class="row gap mrgn-bot">
+                                <!-- user  -->
+                                <span><i class="fa-solid fa-users fa-xs"></i></span>
+                                <!-- paragrafo  -->
+                                <div>  3 o più utenti</div>
+                            </div>
+                            <div class="row gap mrgn-bot">
+                                <!-- cartella  -->
+                                <span><i class="fa-solid fa-folder fa-xs"></i></span>
+                                <!-- paragrafo  -->
+                                <div> 5 TB di spazio di archiviazione sicuro</div>
+                            </div>
+                            <div class="row gap mrgn-bot">
+                                <!-- condivisione  -->
+                                <span><i class="fa-solid fa-share-nodes fa-xs"></i></span>
+                                <!-- paragrafo  -->
+                                <div>Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                            </div>
                             <div class="blue " >
-                                <a class="inherit" href="">Prova gratis per 30 giorni</a>
+                                <a class="inherit no-decoration" href="">Prova gratis per 30 giorni</a>
                             </div>
                             <div class="align">
                                 <span class="line-bot">oppure</span>
@@ -129,12 +173,29 @@
                         <div class="plan">
                             <h3 class="h3-margin" >Professional</h3>
                             <h4 class="euro"> contattaci</h4>
-                            <span class="rate">-</span>
-                            <p><i class="fa-solid fa-user fa-xs" style="color: #000000;"></i> 10 o più utenti</p>
-                            <p><i class="fa-solid fa-folder fa-xs"></i> 5 TB di spazio di archiviazione sicuro</p>
-                            <p><i class="fa-solid fa-share-nodes fa-xs"></i> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</p>
+                            <span class="rate">-</span> 
+                            <!-- riga user e paragrafo   -->
+                            <div class="row gap mrgn-bot">
+                                <!-- user  -->
+                                <span><i class="fa-solid fa-user fa-xs" style="color: #000000;"></i></span>
+                                <!-- paragrafo  -->
+                                <div>10 o più utenti</div>
+                            </div>
+                            <!-- cartella user e paragrafo  -->
+                            <div class="row gap mrgn-bot">
+                                <!-- cartella  -->
+                                <span><i class="fa-solid fa-folder fa-xs"></i></span>
+                                <!-- paragrafo  -->
+                                <div> 5 TB di spazio di archiviazione sicuro</div>
+                            </div>
+                            <div class="row gap mrgn-bot">
+                                <!-- condivisione  -->
+                                <span><i class="fa-solid fa-share-nodes fa-xs"></i></span>
+                                <!-- paragrafo  -->
+                                <div>Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                            </div>
                             <div class="blue" >
-                                <a class="inherit" href="">Prova gratis per 30 giorni</a>
+                                <a class="inherit no-decoration" href="">Prova gratis per 30 giorni</a>
                             </div>
                             <div class="align">
                                 <span class="line-bot">oppure</span>
@@ -154,10 +215,10 @@
                 <div class="biggest-card">
                     <div class="users"><i class="fa-solid fa-building fa-xs" style="color: #000000;"></i> Singolo</div>
                     <div class="plan">
-                        <div class="row">
+                        <div class="row between">
                             <h3 class="h3-margin">Enterprise</h3>
                             <div class="blue">
-                                <a class="inherit" href="">Contatta l'ufficio vendite</a>
+                                <a class="inherit no-decoration" href="">Contatta l'ufficio vendite</a>
                             </div>          
                         </div>
                         <h4>Contatta l'ufficio vendite per i prezzi</h4>
@@ -166,14 +227,14 @@
                 </div>
 
             </section>
-            <div class=" row">
+            <div class=" row between">
              <!-- aside destro -->
             <aside class="content-left">
                 <img src="img/partner.png" alt="">
 
             </aside>
             <!-- aside sinistro  -->
-            <aside class="content-right">
+            <aside class="content-right padding-top">
                 <h3>Entra in contatto con un partner Dropbox</h3>
                 <p>Trova un partner Dropbox e HelloSign di fiducia. Ottiene le soluzioni e i servizi necessari per raggiungere i tuoi obbiettivi aziendali, tra cui implementazione, integrazione gestione e supporto continui.</p>
                 <div class="button-white">
@@ -186,7 +247,7 @@
             
 
             <!-- griglia 2 righe e 3 colonne -->
-            <div class="content">
+            <div class="content row">
                 <!-- contenitore immagine -->
                 <div class="normal-card">
                     <div class="pic">
@@ -269,9 +330,9 @@
         <!-- contenitore lunghezza lunga  -->
         <section class="wide-section">
             <!-- griglia a 3 colonne  -->
-            <div class="icons-row">  
+            <div class="row">  
                 <!-- sotto griglia a 2 colonne sinistra -->
-                <div class="col left-part">
+                <div class="col left-part row">
                     
                     <!-- contenitore card  -->
                     <div class="team bg-green">
@@ -310,7 +371,7 @@
                     </div>
                 </div>
                 <!-- colonna centrale -->
-                <div class="col central-part">
+                <div class="row col central-part">
                     <!-- contenitore descrizione e logo -->
                     <div class="central-padding">
                         <!-- logo  -->
@@ -322,7 +383,7 @@
                         <p>Morten Thomsen, Global IT Lead</p>
                     </div>
                 </div>
-                <div class="col right-part">
+                <div class=" row col right-part">
                     <!-- sotto griglia a 2 colonne destra  -->
                     <div class="team bg-dark-red">
                         <!-- contenitore logo  -->
@@ -361,20 +422,20 @@
 
         <section class="wide-section background-blue">
             <!-- contenitore lunghezza corta  -->
-            <div class="container flex">
+            <div class="container padding-bottom row">
                 <!-- aside sinstro  -->
                 <aside class="content-left">
                     <h2>Porta Dropbox Business nella tua azienda.</h2>
                 </aside> 
                 
                 <!-- aside destro  -->
-                <aside class="content-right">
-                    <a class="blue btn-white">Inizia la tua prova gratuita</a>
+                <aside class="content-right padding-top">
+                    <a class="blue btn-white " >Inizia la tua prova gratuita</a>
                 </aside> 
             </div>        
         </section>
         <!-- contenitore lunghezza corta  -->
-        <section class="container margin-question">
+        <section class="container padding-bottom">
             <!-- titolo secondario  -->
             <h2>Domande frequenti</h2>
             <hr>
@@ -437,18 +498,18 @@
 
     <footer>
         <!-- footer parte superiore -->
-        <div class="top-black">
+        <div class="top-black row padding-top between">
             <!-- card con dentro la lista -->
             <div class="card-list">
                 <!-- titolo -->
                 <h3 class="h3-margin" >Dropbox</h3>
                 <!-- lista  -->
                 <ul>
-                    <li class="space"><a href="" class="no-decoration white-text">Applicazione dekstop</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Perchè Dropbox</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Piani</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Sicurezza</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Funzioni</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Applicazione dekstop</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Perchè Dropbox</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Piani</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Sicurezza</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Funzioni</a></li>
                 </ul>
             </div>
 
@@ -457,11 +518,11 @@
                 <h3 class="h3-margin">Prodotti</h3>
                 <!-- lista  -->
                 <ul>
-                    <li class="space"><a href="" class="no-decoration white-text">Applicazione dekstop</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Perchè Dropbox</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Piani</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Sicurezza</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Funzioni</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Applicazione dekstop</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Perchè Dropbox</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Piani</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Sicurezza</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Funzioni</a></li>
                 </ul>
             </div>
 
@@ -470,11 +531,11 @@
                 <h3 class="h3-margin">Azienda</h3>
                 <!-- lista  -->
                 <ul>
-                    <li class="space"><a href="" class="no-decoration white-text">Applicazione dekstop</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Perchè Dropbox</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Piani</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Sicurezza</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Funzioni</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Applicazione dekstop</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Perchè Dropbox</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Piani</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Sicurezza</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Funzioni</a></li>
                 </ul>
             </div>
 
@@ -483,11 +544,11 @@
                 <h3 class="h3-margin">Supporto</h3>
                 <!-- lista  -->
                 <ul>
-                    <li class="space"><a href="" class="no-decoration white-text">Applicazione dekstop</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Perchè Dropbox</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Piani</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Sicurezza</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Funzioni</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Applicazione dekstop</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Perchè Dropbox</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Piani</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Sicurezza</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Funzioni</a></li>
                 </ul>
             </div>
 
@@ -496,25 +557,24 @@
                 <h3 class="h3-margin">Community</h3>
                 <!-- lista  -->
                 <ul>
-                    <li class="space"><a href="" class="no-decoration white-text">Applicazione dekstop</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Perchè Dropbox</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Piani</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Sicurezza</a></li>
-                    <li class="space"><a href="" class="no-decoration white-text">Funzioni</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Applicazione dekstop</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Perchè Dropbox</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Piani</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Sicurezza</a></li>
+                    <li class="space"><a href="" class="no-decoration inherit">Funzioni</a></li>
                 </ul>
-            </div>
-            
+            </div>  
         </div>
+        
         <!-- footer parte inferiore -->
         <div class="bot-black">
+            <hr class="hr-short">
             <div class="italiano">
-                <i class="fa-solid fa-earth-americas fa-xs" style="color: #e3e3e3;"></i>
+                <i class="fa-solid fa-earth-americas fa-xs" style="color: #e3e3e3;"></i>   
                 <span>Italiano</span>
                 <i class="fa-solid fa-caret-up fa-2xs" style="color: #cfcfcf;"></i>
             </div>
         </div>
-   
-
     </footer>
     
     
