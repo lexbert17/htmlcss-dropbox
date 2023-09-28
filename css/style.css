@@ -83,6 +83,8 @@ h2{
 .padding-bottom{
     padding-bottom: 6rem;
 }
+/* /elementi in comune */
+
 header{
     background-color: hsl(0deg 0% 100%);
     display: flex;
@@ -92,6 +94,9 @@ header{
     right: 0;
     width: 100%;
     z-index: 9999;
+}
+ul{
+    display: inline-block;
 }
 /* contenitore dell'header  */
 .header{
@@ -275,14 +280,12 @@ h3{
  
 .logo-color{ 
     filter: invert(100%);  
-    width: 6em;
+    max-width: 6em;
     position: absolute;
     top:50%;
     right: 50%;
     transform: translate(50%, -50%);
-}   
-    
-    
+}       
 /* sfondi griglia sinistra   */
 
 .bg-green{
