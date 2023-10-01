@@ -48,7 +48,6 @@ p{
     padding: 1rem 0;
 }
 /* spaziatura titolo secondario */
-/* titolo secondario  */
 h2{
     padding: 6rem 0 2rem 0;
 }
@@ -85,6 +84,7 @@ h2{
 }
 /* /elementi in comune */
 
+
 header{
     background-color: hsl(0deg 0% 100%);
     display: flex;
@@ -98,7 +98,7 @@ header{
 ul{
     display: inline-block;
 }
-/* contenitore dell'header  */
+/* parte header  */
 .header{
     height: 80px;
     display: flex; 
@@ -124,7 +124,10 @@ ul{
 .start:hover{
     filter: brightness(1.5);
 }
-/* contenitore prima sezione */
+/* /parte header  */
+
+
+/* contenitore sezione hero */
 .hero{
     width: 80%;
     margin: auto; 
@@ -154,6 +157,9 @@ h1{
     margin-right: 3rem;
     padding-top: 3rem ;
 }
+/* /contenitore sezione hero */
+
+/* sezione delle cards  */
 .cards .row{
     margin-top: 2.5rem;
 }
@@ -171,15 +177,12 @@ h1{
 .plan{
     padding: 2rem;
 }
-h3{
-    
-}
+
 .h3-margin{
     margin-bottom: 1rem;
 }
 .euro{
-    display: block;
-    
+    display: block;  
 }
 .rate{
     display: inline-block;
@@ -189,7 +192,6 @@ h3{
     display: inline-block;
 }
 .space-button{
-    
     margin: 1rem 0;
 }
 .gap{
@@ -220,6 +222,7 @@ h3{
     margin-right: .100em;
     color: hsl(217.32deg 100% 50.2%);
 }
+/* card grande */
 
 /* card lunghezza intera  */
 .biggest-card{
@@ -229,6 +232,10 @@ h3{
 #p-enterprise{
     margin-top: 2rem;
 }
+/* /sezione delle cards  */
+
+
+/* sezione partner */
 .content-left{
     width: 60%;
 }
@@ -247,11 +254,14 @@ h3{
     color: black;
     border: 1px solid black;
     padding: 10px 15px;
+    display: inline-block;
 }
 .button-white:hover #button-white{
     color: grey;
 }
-/* contenitore griglia  3 colonne */
+/* /sezione partner */
+
+/* sezione griglia  3 colonne e 2 righe*/
 .content{
     flex-wrap: wrap;
     margin-bottom: 6rem;
@@ -267,17 +277,18 @@ h3{
     margin: 3rem 0 5rem 0;
     color: rgb(66, 66, 207);
 }
-/* contenitore lunghezza lunga */
+/* /sezione griglia 3 colonne e 2 righe */
+
+/* sezione membri del team*/
 .wide-section{
     width: 100%;
 }
-
 .logo-team{
     height: 100%;  
     width: auto;  
     position: relative; 
 }
- 
+
 .logo-color{ 
     filter: invert(100%);  
     max-width: 6em;
@@ -287,7 +298,6 @@ h3{
     transform: translate(50%, -50%);
 }       
 /* sfondi griglia sinistra   */
-
 .bg-green{
     background-color: hsl(112.5deg 38.89% 71.76%);
     border: 10px solid hsl(109.29deg 38.89% 85.88%);
@@ -301,6 +311,8 @@ h3{
 .bg-red{
     background-color: hsl(359.74deg 100% 55.29%);
 }
+/* /sfondi griglia sinistra */
+
 
 /* griglia con 3 colonne e sotto griglia */
 .col{
@@ -329,26 +341,34 @@ h3{
     margin: 2rem 0;
     width: 80px;
 }
+/* /griglia parte centrale */
 
-/* sfondi griglia destro  */
-.bg-dark-red{
+/* sfondi griglia destra  */
+.bg-dark-red {
     background-color: hsl(350.99deg 100% 41.76%);
 }
-.bg-light-blue{
+
+.bg-light-blue {
     background-color: hsl(207.06deg 51.52% 80.59%);
 }
-.bg-dark-blue{
+
+.bg-dark-blue {
     background-color: hsl(228.1deg 81.69% 27.84%);
 }
-.bg-yellow{
+
+.bg-yellow {
     background-color: hsl(48.7deg 100% 59.41%);
 }
+/* /sfondi griglia destra */
+/* /sezione membri del team  */
 
-.questions{
+
+/* sezione delle domande */
+.questions {
     display: flex;
     justify-content: space-between;
 }
-.p-none{
+.p-none {
     display: none;
 }
 .chevron-none{
@@ -363,7 +383,6 @@ h3{
 .questions:hover .chevron{
     display: none;
 }
-/* domande   */
 .question-box, .answer{
     padding: 1rem;
 }
@@ -373,8 +392,10 @@ h3{
 .btn-white{
   margin-top: 1.5rem;
 }
+/* /sezione delle domande */
+
+
 footer{
-    min-height: 600px;
     background-color: black;
 }
 /* footer parte superiore */
@@ -399,4 +420,3 @@ footer{
     padding-top: 2rem;  
     color: lightgray;
 }
-
